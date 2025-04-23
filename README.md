@@ -54,7 +54,7 @@ splitnsplit/
 
 1. Clone the repository:
 ```
-git clone https://github.com/yourusername/splitnsplit.git
+git clone https://github.com/hunter9752/splitnsplit.git
 cd splitnsplit
 ```
 
@@ -110,8 +110,8 @@ npm run dev
 
 ## License
 
-This project is licensed under the ISC License.
+This project is licensed under the MPL-2.0 License.
 
 ## Contact
 
-Email: support@splitnsplit.com 
+Email: support@splitnsplit.com
