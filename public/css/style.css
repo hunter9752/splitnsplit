@@ -1,0 +1,123 @@
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+.close:hover {
+    color: #000;
+}
+
+.split-details-card {
+    padding: 20px;
+}
+
+.split-details-card .split-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.split-details-card .split-header img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.split-details-card .split-badge {
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: #e3f2fd;
+    color: #1976d2;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.split-details-card .split-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.split-details-card .info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.split-details-card .info-item i {
+    color: #1976d2;
+}
+
+.split-description {
+    margin-bottom: 20px;
+}
+
+.split-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.split-features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.split-features i {
+    color: #4caf50;
+}
+
+.split-actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Dark theme support */
+[data-theme="dark"] .modal-content {
+    background-color: #2d2d2d;
+    color: #fff;
+}
+
+[data-theme="dark"] .close {
+    color: #fff;
+}
+
+[data-theme="dark"] .split-details-card .split-badge {
+    background-color: #1976d2;
+    color: #fff;
+}
+
+[data-theme="dark"] .split-features i {
+    color: #81c784;
+} 

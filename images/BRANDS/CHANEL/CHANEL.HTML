@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanel | Coupon Craze</title>
+    <link rel="stylesheet" href="../../1.CSS">   
+    <link rel="stylesheet" href="CHANEL.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <!-- Same Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="../../logo2.png" alt="LOGO">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../brands.html">Brands</a></li>
+                    <li><a href="../../categories.html">Categories</a></li>
+                    <li><a href="../../deals.html">Today's Deals</a></li>
+                    <li><a href="../../about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="user-profile">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Video (unmuted) -->
+        <section class="video-hero">
+            <video autoplay loop playsinline id="hero-video">
+                <source src="chanel.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="sound-control">
+                <button class="speaker-btn">
+                    <i class="fas fa-volume-mute"></i>
+                </button>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll to discover</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- Content Card -->
+        <section class="content-card">
+            <!-- Brand Showcase -->
+            <section class="brand-showcase">
+                <div class="brand-container">
+                    <div class="brand-logo-section">
+                        <img src="../../CHANEL.png" alt="LOGO" class="brand-logo">
+                        <span class="luxury-tag">Since 1909</span>
+                    </div>
+                    <div class="brand-intro">
+                        <h1>CHANEL</h1>
+                        <p class="brand-tagline">The epitome of timeless luxury and elegance</p>
+                        <div class="brand-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">100+</span>
+                                <span class="stat-label">Years of Excellence</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">150+</span>
+                                <span class="stat-label">Boutiques Worldwide</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">5M+</span>
+                                <span class="stat-label">Loyal Customers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="brand-highlights">
+                        <div class="highlight-card">
+                            <i class="fas fa-crown"></i>
+                            <h3>Luxury Heritage</h3>
+                            <p>A century of crafting luxury experiences and timeless elegance</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fas fa-gem"></i>
+                            <h3>Premium Quality</h3>
+                            <p>Finest materials and expert craftsmanship in every product</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fas fa-award"></i>
+                            <h3>Global Recognition</h3>
+                            <p>Internationally acclaimed for excellence in luxury fashion</p>
+                        </div>
+                    </div>
+
+                    <div class="brand-values">
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="value-content">
+                                <h4>Sustainability</h4>
+                                <p>Committed to environmental responsibility and ethical practices</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="value-content">
+                                <h4>Customer Care</h4>
+                                <p>Dedicated to providing exceptional service and experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Split Video Sections -->
+            <div class="split-sections">
+                <!-- First Video Section -->
+                <div class="split-container">
+                    <div class="video-side">
+                        <div class="video-wrapper">
+                            <!-- Split Videos (muted) -->
+                            <video autoplay muted loop playsinline>
+                                <source src="VEDIO1.mp4" type="video/mp4">
+                            </video>
+                            <div class="sound-control">
+                                <button class="speaker-btn">
+                                    <i class="fas fa-volume-mute"></i>
+                                </button>
+                            </div>
+                            <div class="video-overlay">
+                                <span class="video-tag">Craftsmanship</span>
+                                <h3>The Art of Creation</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-side">
+                        <div class="content-wrapper">
+                            <span class="category-tag">Heritage Collection</span>
+                            <h2>Timeless Elegance</h2>
+                            <p>Experience the essence of CHANEL's craftsmanship, where each creation is a masterpiece of precision and artistry. Our dedication to excellence continues to define luxury in the modern era.</p>
+                            <div class="feature-points">
+                                <div class="feature">
+                                    <i class="fas fa-gem"></i>
+                                    <span>Premium Materials</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-award"></i>
+                                    <span>Expert Artisans</span>
+                                </div>
+                            </div>
+                            <a href="#collections" class="explore-btn">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Video Section -->
+                <div class="split-container">
+                    <div class="video-side">
+                        <div class="video-wrapper">
+                            <video autoplay muted loop playsinline>
+                                <source src="VEDIO2.mp4" type="video/mp4">
+                            </video>
+                            <div class="sound-control">
+                                <button class="speaker-btn">
+                                    <i class="fas fa-volume-mute"></i>
+                                </button>
+                            </div>
+                            <div class="video-overlay">
+                                <span class="video-tag">Heritage</span>
+                                <h3>Legacy of Luxury</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-side">
+                        <div class="content-wrapper">
+                            <span class="category-tag">Legacy Series</span>
+                            <h2>Modern Innovation</h2>
+                            <p>Discover how CHANEL blends traditional expertise with contemporary innovation. Our commitment to excellence creates fragrances that transcend time and trends.</p>
+                            <div class="feature-points">
+                                <div class="feature">
+                                    <i class="fas fa-flask"></i>
+                                    <span>Advanced Technology</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-star"></i>
+                                    <span>Iconic Formulas</span>
+                                </div>
+                            </div>
+                            <a href="#collections" class="explore-btn">View Collection</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Section -->
+            <section class="products-showcase">
+                <div class="section-header">
+                    <h2>Luxury Collections</h2>
+                    <p>Discover our exclusive range of premium products</p>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="download (1).jpg" alt="CHANEL N°5">
+                            <div class="offer-badge">BUY 1 GET 1 FREE</div>
+                        </div>
+                        <div class="product-details">
+                            <h3>CHANEL N°5</h3>
+                            <p class="product-subtitle">Signature Perfume</p>
+                            <div class="product-pricing">
+                                <div class="price-tag">
+                                    <span class="original">$299</span>
+                                    <span class="discounted">$199</span>
+                                </div>
+                                <span class="discount-badge">-33%</span>
+                            </div>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i> Iconic Fragrance</span>
+                                <span><i class="fas fa-check-circle"></i> Limited Edition</span>
+                            </div>
+                            <button class="request-btn">Request Product</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="download (2).jpg" alt="Coco Mademoiselle">
+                            <div class="offer-badge special">BUY 2 GET 1 FREE</div>
+                        </div>
+                        <div class="product-details">
+                            <h3>Coco Mademoiselle</h3>
+                            <p class="product-subtitle">Intense Eau de Parfum</p>
+                            <div class="product-pricing">
+                                <div class="price-tag">
+                                    <span class="original">$259</span>
+                                    <span class="discounted">$189</span>
+                                </div>
+                                <span class="discount-badge">-27%</span>
+                            </div>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i> Long-lasting</span>
+                                <span><i class="fas fa-check-circle"></i> Premium Quality</span>
+                            </div>
+                            <button class="request-btn">Request Product</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="download.jpg" alt="Bleu de CHANEL">
+                            <div class="offer-badge">SPECIAL PRICE</div>
+                        </div>
+                        <div class="product-details">
+                            <h3>Bleu de CHANEL</h3>
+                            <p class="product-subtitle">Parfum for Men</p>
+                            <div class="product-pricing">
+                                <div class="price-tag">
+                                    <span class="original">$279</span>
+                                    <span class="discounted">$209</span>
+                                </div>
+                                <span class="discount-badge">-25%</span>
+                            </div>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i> Masculine Fragrance</span>
+                                <span><i class="fas fa-check-circle"></i> Gift Wrapped</span>
+                            </div>
+                            <button class="request-btn">Request Product</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Request Button -->
+            <div class="request-section">
+                <button class="request-btn">Request More Products</button>
+                <p>Can't find what you're looking for? Let us know!</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>COUPON CRAZE</h3>
+                <div class="logo-container">
+                    <img src="../../logo2.png" alt="LOGO" />
+                </div>
+                <p>Your one-stop destination for the best deals and coupons.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="#perfumes">Perfumes</a></li>
+                    <li><a href="#makeup">Makeup</a></li>
+                    <li><a href="#skincare">Skincare</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                    <li><i class="fas fa-envelope"></i> info@couponcraze.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Deal Street, Shop City</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+                <div class="newsletter">
+                    <h4>Subscribe to Newsletter</h4>
+                    <form>
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 Coupon Craze. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module">
+        // Relative path sahi karo
+        import '../../1.js'; // <-- Double check ye path
+    </script>
+    <script src="chanel.js" type="module"></script>
+</body>
+</html>

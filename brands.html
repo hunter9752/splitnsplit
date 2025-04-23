@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split N Split - Featured Brands</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h1>Split<span>N</span>Split</h1>
+                </div>
+                
+                <div class="nav-wrapper">
+                    <nav>
+                        <ul class="nav-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="deals.html">Explore</a></li>
+                            <li><a href="brands.html" class="active">Brands</a></li>
+                            <li><a href="index.html#how-it-works">How It Works</a></li>
+                            <li><a href="join-split.html">Join a Split</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div class="global-search">
+                        <input type="text" placeholder="Search brands...">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                        <div class="search-results"></div>
+                    </div>
+                </div>
+
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Featured Brands</h1>
+            <p>Discover a variety of split options from your favorite premium brands</p>
+        </div>
+    </section>
+    
+    <section class="brands-section">
+        <div class="container">
+            <div class="brands-filter">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Brands</button>
+                    <button class="filter-btn" data-filter="streaming">Streaming</button>
+                    <button class="filter-btn" data-filter="music">Music</button>
+                    <button class="filter-btn" data-filter="beauty">Beauty</button>
+                    <button class="filter-btn" data-filter="fitness">Fitness</button>
+                    <button class="filter-btn" data-filter="gaming">Gaming</button>
+                    <button class="filter-btn" data-filter="shopping">Shopping</button>
+                </div>
+                
+                <div class="search-brands">
+                    <input type="text" placeholder="Search brands" id="brand-search">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <div class="all-brands-grid">
+                <div class="brand-box" data-category="streaming" id="netflix">
+                    <div class="brand-box-header">
+                        <img src="images/BRANDS/NETFLIX/netflix-icon.jpg" alt="Netflix">
+                        <h2>Netflix</h2>
+                    </div>
+                    <p>Split your Netflix subscription with others and save up to 75% on monthly costs.</p>
+                    <div class="brand-deals">
+                        <div class="brand-deal">
+                            <h3>2-Person Split</h3>
+                            <div class="deal-details">
+                                <p>Netflix Basic plan with 480p quality shared between 2 people.</p>
+                                <div class="price-comparison">
+                                    <div class="original">₹199/month</div>
+                                    <div class="split">₹99.50/month per person</div>
+                                </div>
+                                <a href="brand-details.html#netflix-2" class="btn-elegant">View Deal</a>
+                            </div>
+                        </div>
+                        
+                        <div class="brand-deal">
+                            <h3>4-Person Split</h3>
+                            <div class="deal-details">
+                                <p>Netflix Standard plan with 1080p quality shared between 4 people.</p>
+                                <div class="price-comparison">
+                                    <div class="original">₹499/month</div>
+                                    <div class="split">₹124.75/month per person</div>
+                                </div>
+                                <a href="brand-details.html#netflix-4" class="btn-elegant">View Deal</a>
+                            </div>
+                        </div>
+                        
+                        <div class="brand-deal">
+                            <h3>6-Person Split</h3>
+                            <div class="deal-details">
+                                <p>Netflix Premium plan with 4K quality shared between 6 people (2 simultaneous screens per person on rotation).</p>
+                                <div class="price-comparison">
+                                    <div class="original">₹649/month</div>
+                                    <div class="split">₹108.17/month per person</div>
+                                </div>
+                                <a href="brand-details.html#netflix-6" class="btn-elegant">View Deal</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="brand-details.html#netflix" class="view-all-brand-deals">View All Netflix Deals <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="brand-box" data-category="beauty" id="dotkey">
+                    <div class="brand-box-header">
+                        <img src="images/BRANDS/DOT AND KEY/dotkey-icon.jpg" alt="Dot & Key">
+                        <h2>Dot & Key</h2>
+                    </div>
+                    <p>Premium skincare products at a fraction of the cost with group buy deals and splits.</p>
+                    <div class="brand-deals">
+                        <div class="brand-deal">
+                            <h3>Buy 4 Get 4 Split</h3>
+                            <div class="deal-details">
+                                <p>Group buy deal: 8 premium skincare products for the price of 4 with 4 friends.</p>
+                                <div class="price-comparison">
+                                    <div class="original">₹8,000 (for 8 products)</div>
+                                    <div class="split">₹1,000 per product</div>
+                                </div>
+                                <a href="brand-details.html#dotkey-buy4get4" class="btn-elegant">View Deal</a>
+                            </div>
+                        </div>
+                        
+                        <div class="brand-deal">
+                            <h3>Festive Pack Split</h3>
+                            <div class="deal-details">
+                                <p>Exclusive festive skincare gift box split between 3 people.</p>
+                                <div class="price-comparison">
+                                    <div class="original">₹5,999 (for full box)</div>
+                                    <div class="split">₹1,999.67 per person</div>
+                                </div>
+                                <a href="brand-details.html#dotkey-festive" class="btn-elegant">View Deal</a>
+                            </div>
+                        </div>
+                        
+                        <div class="brand-deal">
+                            <h3>Buy 2 Get 3 Split</h3>
+                            <div class="deal-details">
+                                <p>5 selected skincare products for the price of 2, split between 5 people.</p>
+                                <div class="price-comparison">
+                                    <div class="original">₹5,000 (for 5 products)</div>
+                                    <div class="split">₹1,000 per person</div>
+                                </div>
+                                <a href="brand-details.html#dotkey-buy2get3" class="btn-elegant">View Deal</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="brand-details.html#dotkey" class="view-all-brand-deals">View All Dot & Key Deals <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="brand-box" data-category="music" id="spotify">
+                    <div class="brand-box-header">
+                        <img src="images/15 NEW.jpeg" alt="Spotify">
+                        <h2>Spotify</h2>
+                    </div>
+                    <p>Share premium music streaming plans and save big on subscription costs.</p>
+                    <div class="brand-deals">
+                        <div class="brand-deal">
+                            <h3>4-Person Family Split</h3>
+                            <div class="deal-details">
+                                <p>Spotify Family plan split between 4 people with individual accounts.</p>
+                                <div class="price-comparison">
+                                    <div class="original">₹179/month</div>
+                                    <div class="split">₹44.75/month per person</div>
+                                </div>
+                                <a href="brand-details.html#spotify-4" class="btn-elegant">View Deal</a>
+                            </div>
+                        </div>
+                        
+                        <div class="brand-deal">
+                            <h3>6-Person Premium Split</h3>
+                            <div class="deal-details">
+                                <p>Spotify Family plan fully optimized for 6 members with separate accounts.</p>
+                                <div class="price-comparison">
+                                    <div class="original">₹179/month</div>
+                                    <div class="split">₹29.83/month per person</div>
+                                </div>
+                                <a href="brand-details.html#spotify-6" class="btn-elegant">View Deal</a>
+                            </div>
+                        </div>
+                        
+                        <div class="brand-deal">
+                            <h3>Annual Premium Split</h3>
+                            <div class="deal-details">
+                                <p>12-month prepaid Spotify Duo plan split between 2 people.</p>
+                                <div class="price-comparison">
+                                    <div class="original">₹1,188/year</div>
+                                    <div class="split">₹594/year per person</div>
+                                </div>
+                                <a href="brand-details.html#spotify-annual" class="btn-elegant">View Deal</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="brand-details.html#spotify" class="view-all-brand-deals">View All Spotify Deals <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="brand-box" data-category="fitness" id="golds">
+                    <div class="brand-box-header">
+                        <img src="images/10 NEW.jpeg" alt="Gold's Gym">
+                        <h2>Gold's Gym</h2>
+                    </div>
+                    <p>Share premium gym memberships at Gold's Gym with friends or workout partners.</p>
+                    <div class="brand-deals">
+                        <div class="brand-deal">
+                            <h3>2-Person Membership</h3>
+                            <div class="deal-details">
+                                <p>Gold's Gym membership for 2 people (rotating access cards).</p>
+                                <div class="price-comparison">
+                                    <div class="original">₹30,000/year</div>
+                                    <div class="split">₹15,000/year per person</div>
+                                </div>
+                                <a href="brand-details.html#golds-2" class="btn-elegant">View Deal</a>
+                            </div>
+                        </div>
+                        
+                        <div class="brand-deal">
+                            <h3>3-Person Membership</h3>
+                            <div class="deal-details">
+                                <p>Gold's Gym family membership split between 3 people.</p>
+                                <div class="price-comparison">
+                                    <div class="original">₹36,000/year</div>
+                                    <div class="split">₹12,000/year per person</div>
+                                </div>
+                                <a href="brand-details.html#golds-3" class="btn-elegant">View Deal</a>
+                            </div>
+                        </div>
+                        
+                        <div class="brand-deal">
+                            <h3>4-Person Membership</h3>
+                            <div class="deal-details">
+                                <p>Gold's Gym family premium membership split between 4 people.</p>
+                                <div class="price-comparison">
+                                    <div class="original">₹48,000/year</div>
+                                    <div class="split">₹12,000/year per person</div>
+                                </div>
+                                <a href="brand-details.html#golds-4" class="btn-elegant">View Deal</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="brand-details.html#golds" class="view-all-brand-deals">View All Gold's Gym Deals <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="view-more-container">
+                    <button class="load-more-brands">Load More Brands</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Find Your Perfect Split</h2>
+                <p>Join thousands of smart savers who are sharing premium subscriptions and saving big.</p>
+                <div class="cta-buttons">
+                    <a href="join-split.html" class="btn-elegant">Start Splitting Now</a>
+                    <a href="deals.html" class="btn-outline-elegant">Explore All Deals</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Split N Split</h3>
+                    <p>Join the smart saving revolution by splitting premium subscriptions with others.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="brands.html">Brands</a></li>
+                        <li><a href="index.html#how-it-works">How It Works</a></li>
+                        <li><a href="join-split.html">Join a Split</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="deals.html#streaming">Streaming</a></li>
+                        <li><a href="deals.html#music">Music</a></li>
+                        <li><a href="deals.html#software">Software</a></li>
+                        <li><a href="deals.html#fitness">Fitness</a></li>
+                        <li><a href="deals.html#shopping">Shopping</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Split N Split. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="theme-switch-wrapper">
+        <span class="theme-icon"><i class="fas fa-moon"></i></span>
+        <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

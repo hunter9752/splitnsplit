@@ -1,0 +1,76 @@
+[
+    {
+        "brand": "Netflix",
+        "title": "Netflix Premium Subscription",
+        "description": "Share Netflix Premium subscription with other members",
+        "category": "Entertainment",
+        "plans": [
+            {
+                "name": "4-Person Split",
+                "badge": "Most Popular",
+                "price": "200",
+                "originalPrice": "649",
+                "savings": "449",
+                "features": [
+                    "4K + HDR Quality",
+                    "Watch on 4 Screens",
+                    "Ad-free Experience",
+                    "Downloads Available"
+                ],
+                "currentMembers": 0,
+                "maxMembers": 4,
+                "status": "available"
+            },
+            {
+                "name": "2-Person Split",
+                "badge": "Quick Fill",
+                "price": "300",
+                "originalPrice": "649",
+                "savings": "349",
+                "features": [
+                    "4K + HDR Quality",
+                    "Watch on 2 Screens",
+                    "Ad-free Experience",
+                    "Downloads Available"
+                ],
+                "currentMembers": 0,
+                "maxMembers": 2,
+                "status": "available"
+            }
+        ],
+        "stats": {
+            "activeSplits": 10,
+            "rating": 4.8,
+            "totalSaved": 25000
+        }
+    },
+    {
+        "brand": "Spotify",
+        "title": "Spotify Premium Family",
+        "description": "Share Spotify Premium Family subscription",
+        "category": "Music",
+        "plans": [
+            {
+                "name": "6-Person Split",
+                "badge": "Best Value",
+                "price": "50",
+                "originalPrice": "179",
+                "savings": "129",
+                "features": [
+                    "Ad-free Music",
+                    "High Quality Audio",
+                    "Offline Downloads",
+                    "Individual Accounts"
+                ],
+                "currentMembers": 0,
+                "maxMembers": 6,
+                "status": "available"
+            }
+        ],
+        "stats": {
+            "activeSplits": 8,
+            "rating": 4.7,
+            "totalSaved": 15000
+        }
+    }
+] 

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split N Split - Browse Deals</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h1>Split<span>N</span>Split</h1>
+                </div>
+                
+                <div class="nav-wrapper">
+                    <nav>
+                        <ul class="nav-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="deals.html" class="active">Explore</a></li>
+                            <li><a href="brands.html">Brands</a></li>
+                            <li><a href="index.html#how-it-works">How It Works</a></li>
+                            <li><a href="join-split.html">Join a Split</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div class="global-search">
+                        <input type="text" placeholder="Search premium deals...">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                        <div class="search-results"></div>
+                    </div>
+                </div>
+
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Premium Subscription Deals</h1>
+            <p>Discover exclusive partnerships and start saving with our community</p>
+        </div>
+    </section>
+
+    <section class="deals-section">
+        <div class="container">
+            <div class="filters-container">
+                <div class="search-filter">
+                    <input type="text" placeholder="Search for deals..." id="deals-search">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="filter-group">
+                    <label>Category</label>
+                    <select id="category-filter">
+                        <option value="all">All Categories</option>
+                        <option value="streaming">Streaming</option>
+                        <option value="music">Music</option>
+                        <option value="software">Software</option>
+                        <option value="fitness">Fitness</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="gaming">Gaming</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>Price Range</label>
+                    <select id="price-filter">
+                        <option value="all">All Prices</option>
+                        <option value="under-100">Under ₹100/month</option>
+                        <option value="100-500">₹100 - ₹500/month</option>
+                        <option value="500-1000">₹500 - ₹1000/month</option>
+                        <option value="1000-plus">₹1000+/month</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>Sort By</label>
+                    <select id="sort-filter">
+                        <option value="popular">Most Popular</option>
+                        <option value="newest">Newest</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="savings">Highest Savings</option>
+                    </select>
+                </div>
+                
+                <button class="clear-filters">Clear All</button>
+            </div>
+            
+            <div class="active-filters">
+                <!-- Active filter tags will appear here -->
+            </div>
+
+            <div class="deals-grid">
+                <!-- Streaming Section -->
+                <h2 class="category-title" id="streaming">Streaming</h2>
+                
+                <div class="deal-card" id="netflix">
+                    <div class="deal-badge hot">HOT</div>
+                    <div class="deal-image">
+                        <img src="images/BRANDS/NETFLIX/netflix1.jpg" alt="Netflix Premium">
+                    </div>
+                    <div class="deal-content">
+                        <h3>Netflix Premium</h3>
+                        <div class="deal-meta">
+                            <span><i class="fas fa-users"></i> 4 slots</span>
+                            <span><i class="fas fa-tag"></i> Streaming</span>
+                        </div>
+                        <p>4K streaming with Netflix's premium plan for 4 screens. Split the cost and save 75%.</p>
+                        <div class="deal-price">
+                            <div class="original-price">₹649/month</div>
+                            <div class="split-price">Your cost: <span>₹162/month</span></div>
+                        </div>
+                        <a href="join-split.html#netflix" class="btn-elegant">Join Split</a>
+                    </div>
+                </div>
+                
+                <div class="deal-card" id="prime">
+                    <div class="deal-badge value">VALUE</div>
+                    <div class="deal-image">
+                        <img src="images/NEW 7.jpeg" alt="Amazon Prime">
+                    </div>
+                    <div class="deal-content">
+                        <h3>Amazon Prime</h3>
+                        <div class="deal-meta">
+                            <span><i class="fas fa-users"></i> 3 slots</span>
+                            <span><i class="fas fa-tag"></i> Streaming</span>
+                        </div>
+                        <p>Video, music, free shipping and more. Share an annual subscription with family members.</p>
+                        <div class="deal-price">
+                            <div class="original-price">₹1,499/year</div>
+                            <div class="split-price">Your cost: <span>₹500/year</span></div>
+                        </div>
+                        <a href="join-split.html#prime" class="btn-elegant">Join Split</a>
+                    </div>
+                </div>
+                
+                <div class="deal-card" id="hotstar">
+                    <div class="deal-image">
+                        <img src="images/9 NEW.jpeg" alt="Disney+ Hotstar">
+                    </div>
+                    <div class="deal-content">
+                        <h3>Disney+ Hotstar</h3>
+                        <div class="deal-meta">
+                            <span><i class="fas fa-users"></i> 3 slots</span>
+                            <span><i class="fas fa-tag"></i> Streaming</span>
+                        </div>
+                        <p>Movies, shows and live sports with Premium subscription for 4 devices simultaneously.</p>
+                        <div class="deal-price">
+                            <div class="original-price">₹1,499/year</div>
+                            <div class="split-price">Your cost: <span>₹500/year</span></div>
+                        </div>
+                        <a href="join-split.html#hotstar" class="btn-elegant">Join Split</a>
+                    </div>
+                </div>
+                
+                <div class="deal-card" id="hbo">
+                    <div class="deal-badge new">NEW</div>
+                    <div class="deal-image">
+                        <img src="images/17 NEW.jpeg" alt="HBO Max">
+                    </div>
+                    <div class="deal-content">
+                        <h3>HBO Max</h3>
+                        <div class="deal-meta">
+                            <span><i class="fas fa-users"></i> 3 slots</span>
+                            <span><i class="fas fa-tag"></i> Streaming</span>
+                        </div>
+                        <p>Premium entertainment with exclusive HBO Originals and Warner Bros movies.</p>
+                        <div class="deal-price">
+                            <div class="original-price">₹899/month</div>
+                            <div class="split-price">Your cost: <span>₹300/month</span></div>
+                        </div>
+                        <a href="join-split.html#hbo" class="btn-elegant">Join Split</a>
+                    </div>
+                </div>
+                
+                <!-- Music Section -->
+                <h2 class="category-title" id="music">Music</h2>
+                
+                <div class="deal-card" id="spotify">
+                    <div class="deal-badge popular">POPULAR</div>
+                    <div class="deal-image">
+                        <img src="images/15 NEW.jpeg" alt="Spotify Family">
+                    </div>
+                    <div class="deal-content">
+                        <h3>Spotify Family</h3>
+                        <div class="deal-meta">
+                            <span><i class="fas fa-users"></i> 6 slots</span>
+                            <span><i class="fas fa-tag"></i> Music</span>
+                        </div>
+                        <p>Premium music streaming for up to 6 accounts. Split with others and enjoy ad-free music.</p>
+                        <div class="deal-price">
+                            <div class="original-price">₹179/month</div>
+                            <div class="split-price">Your cost: <span>₹35/month</span></div>
+                        </div>
+                        <a href="join-split.html#spotify" class="btn-elegant">Join Split</a>
+                    </div>
+                </div>
+                
+                <div class="deal-card" id="youtube">
+                    <div class="deal-image">
+                        <img src="images/16 NEW.jpeg" alt="YouTube Premium">
+                    </div>
+                    <div class="deal-content">
+                        <h3>YouTube Premium</h3>
+                        <div class="deal-meta">
+                            <span><i class="fas fa-users"></i> 5 slots</span>
+                            <span><i class="fas fa-tag"></i> Music</span>
+                        </div>
+                        <p>Ad-free experience, background play, downloads, and YouTube Music Premium.</p>
+                        <div class="deal-price">
+                            <div class="original-price">₹189/month</div>
+                            <div class="split-price">Your cost: <span>₹38/month</span></div>
+                        </div>
+                        <a href="join-split.html#youtube" class="btn-elegant">Join Split</a>
+                    </div>
+                </div>
+                
+                <!-- Software Section -->
+                <h2 class="category-title" id="software">Software</h2>
+                
+                <div class="deal-card" id="adobe">
+                    <div class="deal-badge hot">HOT</div>
+                    <div class="deal-image">
+                        <img src="images/18 NEW.jpeg" alt="Adobe Creative Cloud">
+                    </div>
+                    <div class="deal-content">
+                        <h3>Adobe Creative Cloud</h3>
+                        <div class="deal-meta">
+                            <span><i class="fas fa-users"></i> 2 slots</span>
+                            <span><i class="fas fa-tag"></i> Software</span>
+                        </div>
+                        <p>Get Photoshop, Illustrator, and 20+ top creative apps. Perfect for designers and creators.</p>
+                        <div class="deal-price">
+                            <div class="original-price">₹4,230/month</div>
+                            <div class="split-price">Your cost: <span>₹2,115/month</span></div>
+                        </div>
+                        <a href="join-split.html#adobe" class="btn-elegant">Join Split</a>
+                    </div>
+                </div>
+                
+                <div class="deal-card" id="microsoft">
+                    <div class="deal-image">
+                        <img src="images/download (7).jpeg" alt="Microsoft 365 Family">
+                    </div>
+                    <div class="deal-content">
+                        <h3>Microsoft 365 Family</h3>
+                        <div class="deal-meta">
+                            <span><i class="fas fa-users"></i> 6 slots</span>
+                            <span><i class="fas fa-tag"></i> Software</span>
+                        </div>
+                        <p>All Office apps with 6TB cloud storage (1TB per person) for up to 6 users.</p>
+                        <div class="deal-price">
+                            <div class="original-price">₹5,299/year</div>
+                            <div class="split-price">Your cost: <span>₹883/year</span></div>
+                        </div>
+                        <a href="join-split.html#microsoft" class="btn-elegant">Join Split</a>
+                    </div>
+                </div>
+                
+                <!-- Fitness Section -->
+                <h2 class="category-title" id="fitness">Fitness</h2>
+                
+                <div class="deal-card" id="goldsgym">
+                    <div class="deal-badge value">VALUE</div>
+                    <div class="deal-image">
+                        <img src="images/10 NEW.jpeg" alt="Gold's Gym">
+                    </div>
+                    <div class="deal-content">
+                        <h3>Gold's Gym</h3>
+                        <div class="deal-meta">
+                            <span><i class="fas fa-users"></i> 3 slots</span>
+                            <span><i class="fas fa-tag"></i> Fitness</span>
+                        </div>
+                        <p>Annual gym membership with access to all premium facilities. Split with friends and save.</p>
+                        <div class="deal-price">
+                            <div class="original-price">₹36,000/year</div>
+                            <div class="split-price">Your cost: <span>₹12,000/year</span></div>
+                        </div>
+                        <a href="join-split.html#goldsgym" class="btn-elegant">Join Split</a>
+                    </div>
+                </div>
+                
+                <div class="deal-card" id="cult">
+                    <div class="deal-image">
+                        <img src="images/NEW 4.jpg" alt="cult.fit">
+                    </div>
+                    <div class="deal-content">
+                        <h3>cult.fit</h3>
+                        <div class="deal-meta">
+                            <span><i class="fas fa-users"></i> 2 slots</span>
+                            <span><i class="fas fa-tag"></i> Fitness</span>
+                        </div>
+                        <p>12 month membership with access to all cult centers and live classes. Share with a partner.</p>
+                        <div class="deal-price">
+                            <div class="original-price">₹24,000/year</div>
+                            <div class="split-price">Your cost: <span>₹12,000/year</span></div>
+                        </div>
+                        <a href="join-split.html#cult" class="btn-elegant">Join Split</a>
+                    </div>
+                </div>
+                
+                <!-- Shopping Section -->
+                <h2 class="category-title" id="shopping">Shopping</h2>
+                
+                <div class="deal-card" id="chanel">
+                    <div class="deal-badge luxury">LUXURY</div>
+                    <div class="deal-image">
+                        <img src="images/CHANEL.png" alt="Chanel Beauty Box">
+                    </div>
+                    <div class="deal-content">
+                        <h3>Chanel Beauty Box</h3>
+                        <div class="deal-meta">
+                            <span><i class="fas fa-users"></i> 4 slots</span>
+                            <span><i class="fas fa-tag"></i> Shopping</span>
+                        </div>
+                        <p>Monthly beauty subscription with full-size Chanel products. Split the cost with friends.</p>
+                        <div class="deal-price">
+                            <div class="original-price">₹5,999/month</div>
+                            <div class="split-price">Your cost: <span>₹1,500/month</span></div>
+                        </div>
+                        <a href="join-split.html#chanel" class="btn-elegant">Join Split</a>
+                    </div>
+                </div>
+                
+                <div class="deal-card" id="myntra">
+                    <div class="deal-image">
+                        <img src="images/MOISTURISE.avif" alt="Myntra Insider">
+                    </div>
+                    <div class="deal-content">
+                        <h3>Myntra Insider</h3>
+                        <div class="deal-meta">
+                            <span><i class="fas fa-users"></i> 2 slots</span>
+                            <span><i class="fas fa-tag"></i> Shopping</span>
+                        </div>
+                        <p>Premium tier membership with exclusive early access to sales, faster delivery and more.</p>
+                        <div class="deal-price">
+                            <div class="original-price">₹2,599/year</div>
+                            <div class="split-price">Your cost: <span>₹1,300/year</span></div>
+                        </div>
+                        <a href="join-split.html#myntra" class="btn-elegant">Join Split</a>
+                    </div>
+                </div>
+                
+                <!-- Gaming Section -->
+                <h2 class="category-title" id="gaming">Gaming</h2>
+                
+                <div class="deal-card" id="xbox">
+                    <div class="deal-badge popular">POPULAR</div>
+                    <div class="deal-image">
+                        <img src="images/NEW 2.jpg" alt="Xbox Game Pass Ultimate">
+                    </div>
+                    <div class="deal-content">
+                        <h3>Xbox Game Pass Ultimate</h3>
+                        <div class="deal-meta">
+                            <span><i class="fas fa-users"></i> 4 slots</span>
+                            <span><i class="fas fa-tag"></i> Gaming</span>
+                        </div>
+                        <p>Access to over 100 high-quality games for console, PC, and Android mobile devices.</p>
+                        <div class="deal-price">
+                            <div class="original-price">₹999/month</div>
+                            <div class="split-price">Your cost: <span>₹250/month</span></div>
+                        </div>
+                        <a href="join-split.html#xbox" class="btn-elegant">Join Split</a>
+                    </div>
+                </div>
+                
+                <div class="deal-card" id="ps-plus">
+                    <div class="deal-image">
+                        <img src="images/BIO.jpg" alt="PlayStation Plus">
+                    </div>
+                    <div class="deal-content">
+                        <h3>PlayStation Plus</h3>
+                        <div class="deal-meta">
+                            <span><i class="fas fa-users"></i> 3 slots</span>
+                            <span><i class="fas fa-tag"></i> Gaming</span>
+                        </div>
+                        <p>Premium tier with hundreds of games, cloud streaming, game trials, and exclusive content.</p>
+                        <div class="deal-price">
+                            <div class="original-price">₹8,999/year</div>
+                            <div class="split-price">Your cost: <span>₹3,000/year</span></div>
+                        </div>
+                        <a href="join-split.html#ps-plus" class="btn-elegant">Join Split</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#" class="next">Next <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-banner">
+        <div class="container">
+            <div class="section-header">
+                <h2>Watch How It Works</h2>
+                <p>See how easy it is to join a split and save money</p>
+            </div>
+            <div class="video-container">
+                <iframe data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="How Split N Split Works" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Saving?</h2>
+                <p>Join thousands of smart users who are already saving money with Split N Split.</p>
+                <div class="cta-buttons">
+                    <a href="join-split.html" class="btn-elegant">Start Splitting Now</a>
+                    <a href="deals.html" class="btn-outline-elegant">Explore All Deals</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Split N Split</h3>
+                    <p>Join the smart saving revolution by splitting premium subscriptions with others.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="index.html#how-it-works">How It Works</a></li>
+                        <li><a href="join-split.html">Join a Split</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#streaming">Streaming</a></li>
+                        <li><a href="#music">Music</a></li>
+                        <li><a href="#software">Software</a></li>
+                        <li><a href="#fitness">Fitness</a></li>
+                        <li><a href="#shopping">Shopping</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Split N Split. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="theme-switch-wrapper">
+        <span class="theme-icon"><i class="fas fa-moon"></i></span>
+        <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dot & Key | Coupon Craze</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../1.CSS">
+    <link rel="stylesheet" href="dot and key.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="../../logo2.png" alt="LOGO">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../brands.html">Brands</a></li>
+                    <li><a href="../../categories.html">Categories</a></li>
+                    <li><a href="../../deals.html">Today's Deals</a></li>
+                    <li><a href="../../about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="user-profile">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Intro Animation Section -->
+        <section class="intro-section" style="display: flex; justify-content: center; align-items: flex-start; margin: 0; padding-top: 30px; line-height: 1;">
+            <div class="intro-container" style="text-align: center; width: fit-content; margin: 0; padding: 0;">
+                <span class="dot-animation" style="font-weight: bold; font-size: 3rem; margin: 0; padding: 0; display: inline-block; color: inherit; font-family: 'Arial', sans-serif;">Dot</span>
+                <span class="and" style="font-weight: bold; font-size: 3rem; margin: 0; padding: 0; display: inline-block; color: inherit; font-family: 'Arial', sans-serif;">&</span>
+                <span class="key-animation" style="font-weight: bold; font-size: 3rem; margin: 0; padding: 0; display: inline-block; color: inherit; font-family: 'Arial', sans-serif;">Key</span>
+            </div>
+        </section>
+
+        <!-- Hero Section -->
+        <section class="hero-section" style="margin: 0; padding: 0;">
+            <video autoplay muted loop playsinline>
+                <source src="img vid/vidiodot3.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay">
+                <div style="text-align:  bottom center; margin-bottom: -100px;">
+                    <h1 id="color-changing-heading" style="font-size: 2.5rem; font-family: 'Montserrat', sans-serif; font-weight: 700; margin: 0; letter-spacing: -1px;">Welcome to Dot & Key</h1>
+                </div>
+                <div style="text-align: bottom center; margin-bottom: -300px;">
+                    <p id="color-changing-text" style=" font: size 2rem; font-family:'Space Grotesk', sans-serif; letter-spacing: -1px;">>Discover premium skincare products for a radiant glow.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hot Deals Section -->
+        <section class="hot-deals">
+            <div class="hd-container">
+                <div class="hd-header">
+                    <h2 class="hd-title">
+                        <div class="title-wrapper">
+                            <span class="hd-gradient">DOT & KEY SPLIT DEALS</span>
+                            <div class="badge-new">SPLIT & SAVE</div>
+                        </div>
+                        <p class="hd-subtitle">Split with friends & save more! 👥💰</p>
+                    </h2>
+                </div>
+
+                <div class="hd-grid">
+                    <!-- BOGO Split Deal -->
+                    <div class="hd-card split-deal">
+                        <div class="deal-badge">BOGO SPLIT</div>
+                        <div class="card-content">
+                            <div class="split-info">
+                                <div class="split-members">
+                                    <div class="member active">
+                                        <img src="img vid/USER-removebg-preview.png" alt="You">
+                                        <span>You</span>
+                                        <div class="status-dot"></div>
+                                    </div>
+                                    <div class="split-divider">
+                                        <i class="fas fa-arrows-left-right"></i>
+                                    </div>
+                                    <div class="member empty">
+                                        <div class="add-friend">
+                                            <i class="fas fa-user-plus"></i>
+                                        </div>
+                                        <span>Friend</span>
+                                    </div>
+                                </div>
+                                <div class="split-status">Need 1 more friend to unlock deal</div>
+                            </div>
+                            
+                            <div class="deal-image">
+                                <img src="img vid/ornage 2.jpg" alt="Vitamin C Bundle">
+                                <div class="image-badge">Buy 1 Get 1 Free</div>
+                            </div>
+                            
+                            <div class="deal-details">
+                                <h3>Vitamin C Serum</h3>
+                                <div class="split-pricing">
+                                    <div class="price-box">
+                                        <span class="label">Your Share:</span>
+                                        <span class="price">₹499</span>
+                                        <span class="original">₹999</span>
+                                    </div>
+                                    <div class="savings">Save 50% each</div>
+                                </div>
+                            </div>
+
+                            <button class="split-btn">
+                                <span>Share & Split</span>
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 3-Way Split Deal -->
+                    <div class="hd-card split-deal premium">
+                        <div class="deal-badge">3-WAY SPLIT</div>
+                        <div class="card-content">
+                            <div class="split-info">
+                                <div class="split-members three-way">
+                                    <div class="member active">
+                                        <img src="img vid/USER-removebg-preview.png" alt="You">
+                                        <span>You</span>
+                                        <div class="status-dot"></div>
+                                    </div>
+                                    <div class="member empty">
+                                        <div class="add-friend">
+                                            <i class="fas fa-user-plus"></i>
+                                        </div>
+                                        <span>Friend 1</span>
+                                    </div>
+                                    <div class="member empty">
+                                        <div class="add-friend">
+                                            <i class="fas fa-user-plus"></i>
+                                        </div>
+                                        <span>Friend 2</span>
+                                    </div>
+                                </div>
+                                <div class="split-status">Need 2 more friends</div>
+                            </div>
+
+                            <div class="deal-image">
+                                <img src="img vid/BUNDEL.webp" alt="Premium Bundle">
+                                <div class="image-badge">66% OFF</div>
+                            </div>
+
+                            <div class="deal-details">
+                                <h3>Premium Skincare Bundle</h3>
+                                <div class="split-pricing">
+                                    <div class="price-box">
+                                        <span class="label">Per Person:</span>
+                                        <span class="price">₹999</span>
+                                        <span class="original">₹2,999</span>
+                                    </div>
+                                    <div class="savings">Each saves ₹2,000</div>
+                                </div>
+                            </div>
+
+                            <button class="split-btn premium-btn">
+                                <span>Create Split Group</span>
+                                <i class="fas fa-users"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Flash Split Deal -->
+                    <div class="hd-card split-deal flash">
+                        <div class="deal-badge">FLASH SPLIT</div>
+                        <div class="card-content">
+                            <div class="flash-timer">
+                                <i class="fas fa-bolt"></i>
+                                <span>Ends in 01:30:45</span>
+                            </div>
+
+                            <div class="split-info">
+                                <div class="split-members">
+                                    <div class="member active">
+                                        <img src="img vid/USER-removebg-preview.png" alt="You">
+                                        <span>You</span>
+                                        <div class="status-dot"></div>
+                                    </div>
+                                    <div class="split-divider">
+                                        <i class="fas fa-arrows-left-right"></i>
+                                    </div>
+                                    <div class="member empty">
+                                        <div class="add-friend">
+                                            <i class="fas fa-user-plus"></i>
+                                        </div>
+                                        <span>Friend</span>
+                                    </div>
+                                </div>
+                                <div class="split-status">Quick! Only 3 splits left</div>
+                            </div>
+
+                            <div class="deal-image">
+                                <img src="img vid/ornage 2.jpg" alt="Flash Deal">
+                                <div class="image-badge">70% OFF</div>
+                            </div>
+
+                            <div class="deal-details">
+                                <h3>Flash Deal Bundle</h3>
+                                <div class="split-pricing">
+                                    <div class="price-box">
+                                        <span class="label">Your Share:</span>
+                                        <span class="price">₹599</span>
+                                        <span class="original">₹1,999</span>
+                                    </div>
+                                    <div class="savings">Limited Time Offer!</div>
+                                </div>
+                            </div>
+
+                            <button class="split-btn flash-btn">
+                                <span>Quick Split</span>
+                                <i class="fas fa-bolt"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 4-Way Split Deal -->
+                    <div class="hd-card split-deal" id="buy2get2">
+                        <div class="deal-badge">4-WAY SPLIT</div>
+                        <div class="card-content">
+                            <div class="split-info">
+                                <div class="split-members">
+                                    <div class="member active">
+                                        <img src="img vid/USER-removebg-preview.png" alt="You">
+                                        <span>You</span>
+                                        <div class="status-dot"></div>
+                                    </div>
+                                    <!-- Empty slots will be filled by JavaScript -->
+                                </div>
+                                <div class="split-status">Need 3 more friends to unlock deal</div>
+                            </div>
+                            
+                            <div class="deal-image">
+                                <img src="img vid/ornage 2.jpg" alt="Vitamin C Bundle">
+                                <div class="image-badge">Buy 2 Get 2 Free</div>
+                            </div>
+                            
+                            <div class="deal-details">
+                                <h3>Vitamin C Serum Bundle</h3>
+                                <div class="split-pricing">
+                                    <div class="price-box">
+                                        <span class="label">Your Share:</span>
+                                        <span class="price">₹499</span>
+                                        <span class="original">₹1,999</span>
+                                    </div>
+                                    <div class="savings">75% Off Per Person</div>
+                                </div>
+                            </div>
+
+                            <button class="split-btn">
+                                <span>Join Split Deal</span>
+                                <i class="fas fa-users"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section class="featured-products">
+            <div class="section-header">
+                <h2 class="gradient-text">Featured Products</h2>
+                <p class="section-subtitle">Discover our bestselling skincare solutions</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Vitamin C Serum -->
+                <div class="product-card">
+                    <div class="card-inner">
+                        <!-- Front Side -->
+                        <div class="card-front">
+                            <div class="product-image">
+                                <img src="img vid/orange 1.jpg" alt="Vitamin C Serum">
+                            </div>
+                            <div class="product-info">
+                                <h3>20% Vitamin C Serum</h3>
+                                <div class="product-price">
+                                    <span class="current">₹599</span>
+                                    <span class="original">₹799</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Back Side -->
+                        <div class="card-back">
+                            <div class="product-details">
+                                <h3>20% Vitamin C Serum</h3>
+                                <div class="product-description">
+                                    <p>Brightening & Anti-aging Formula</p>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> 20% Pure Vitamin C</li>
+                                        <li><i class="fas fa-check"></i> Reduces Dark Spots</li>
+                                        <li><i class="fas fa-check"></i> Boosts Collagen</li>
+                                        <li><i class="fas fa-check"></i> Even Skin Tone</li>
+                                    </ul>
+                                </div>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(4.5/5)</span>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="buy-now">Buy Now</button>
+                                    <button class="add-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Watermelon Gel -->
+                <div class="product-card">
+                    <div class="card-inner">
+                        <!-- Front Side -->
+                        <div class="card-front">
+                            <div class="product-image">
+                                <img src="img vid/leven 1.jpg" alt="Watermelon Gel">
+                            </div>
+                            <div class="product-info">
+                                <h3>Watermelon Gel Moisturizer</h3>
+                                <div class="product-price">
+                                    <span class="current">₹499</span>
+                                    <span class="original">₹699</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Back Side -->
+                        <div class="card-back">
+                            <div class="product-details">
+                                <h3>Watermelon Gel Moisturizer</h3>
+                                <div class="product-description">
+                                    <p>Oil-Free Hydration Formula</p>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Oil Control</li>
+                                        <li><i class="fas fa-check"></i> 72Hr Hydration</li>
+                                        <li><i class="fas fa-check"></i> Reduces Pores</li>
+                                        <li><i class="fas fa-check"></i> Non-Comedogenic</li>
+                                    </ul>
+                                </div>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(4.0/5)</span>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="buy-now">Buy Now</button>
+                                    <button class="add-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cica Gel -->
+                <div class="product-card">
+                    <div class="card-inner">
+                        <!-- Front Side -->
+                        <div class="card-front">
+                            <div class="product-image">
+                                <img src="img vid/greeen 1.jpg" alt="Cica Gel">
+                            </div>
+                            <div class="product-info">
+                                <h3>Cica Gel Moisturizer</h3>
+                                <div class="product-price">
+                                    <span class="current">₹449</span>
+                                    <span class="original">₹649</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Back Side -->
+                        <div class="card-back">
+                            <div class="product-details">
+                                <h3>Cica Gel Moisturizer</h3>
+                                <div class="product-description">
+                                    <p>Calming & Repairing Formula</p>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Reduces Redness</li>
+                                        <li><i class="fas fa-check"></i> Repairs Skin Barrier</li>
+                                        <li><i class="fas fa-check"></i> Soothes Irritation</li>
+                                        <li><i class="fas fa-check"></i> Anti-Inflammatory</li>
+                                    </ul>
+                                </div>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(5.0/5)</span>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="buy-now">Buy Now</button>
+                                    <button class="add-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Night Serum -->
+                <div class="product-card">
+                    <div class="card-inner">
+                        <!-- Front Side -->
+                        <div class="card-front">
+                            <div class="product-image">
+                                <img src="img vid/blue 1.jpg" alt="Night Serum">
+                            </div>
+                            <div class="product-info">
+                                <h3>Retinol Night Repair Serum</h3>
+                                <div class="product-price">
+                                    <span class="current">₹699</span>
+                                    <span class="original">₹899</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Back Side -->
+                        <div class="card-back">
+                            <div class="product-details">
+                                <h3>Retinol Night Repair Serum</h3>
+                                <div class="product-description">
+                                    <p>Anti-Aging Night Treatment</p>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Reduces Fine Lines</li>
+                                        <li><i class="fas fa-check"></i> Boosts Cell Renewal</li>
+                                        <li><i class="fas fa-check"></i> Improves Texture</li>
+                                        <li><i class="fas fa-check"></i> Evens Skin Tone</li>
+                                    </ul>
+                                </div>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(4.5/5)</span>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="buy-now">Buy Now</button>
+                                    <button class="add-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Testimonial Section -->
+        <section class="video-testimonial">
+            <div class="video-container">
+                <video controls>
+                    <source src="img vid/vediodot1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="testimonial-content">
+                <h2>What Our Customers Say</h2>
+                <p>"Dot & Key products transformed my skincare routine!"</p>
+            </div>
+        </section>
+
+        <!-- Offer Banner Section -->
+        <section class="offer-banner">
+            <div class="banner-content">
+                <h2>Special Offer!</h2>
+                <p>Get 20% off on all products. Offer ends in:</p>
+                <div class="countdown-timer">
+                    <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Section -->
+        <section class="product-section" style="display: flex; justify-content: space-around; margin-top: 40px;">
+            <div class="product-container" style="background-color: #ddb455; padding: 20px; border-radius: 10px; text-align: center; width: 200px;">
+                <img src="img vid/orange 1.jpg" alt="Vitamin C Sunscreen" style="width: 100%; border-radius: 10px; margin-bottom: 10px; mix-blend-mode: multiply;">
+                <h3 style="color: #fff;">Vitamin C</h3>
+                <p style="color: #fff;">Boosts Glow</p>
+            </div>
+            <div class="product-container" style="background-color: #de6b6b; padding: 20px; border-radius: 10px; text-align: center; width: 200px;">
+                <img src="img vid/leven 1.jpg" alt="Watermelon Sunscreen" style="width: 100%; border-radius: 10px; margin-bottom: 10px; mix-blend-mode: multiply;">
+                <h3 style="color: #fff;">Watermelon</h3>
+                <p style="color: #fff;">Controls Excess Oil</p>
+            </div>
+            <div class="product-container" style="background-color: #438746; padding: 20px; border-radius: 10px; text-align: center; width: 200px;">
+                <img src="img vid/greeen 1.jpg" alt="Super Cica Sunscreen" style="width: 100%; border-radius: 10px; margin-bottom: 10px; mix-blend-mode: multiply;">
+                <h3 style="color: #fff;">Super Cica</h3>
+                <p style="color: #fff;">Reduces Acne & Redness</p>
+            </div>
+            <div class="product-container" style="background-color: #3a90d6; padding: 20px; border-radius: 10px; text-align: center; width: 200px;">
+                <img src="img vid/blue 1.jpg" alt="Barrier Repair Sunscreen" style="width: 100%; border-radius: 10px; margin-bottom: 10px; mix-blend-mode: multiply;">
+                <h3 style="color: #fff;">Barrier Repair</h3>
+                <p style="color: #fff;">Hydrates & Repairs Skin</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>COUPON CRAZE</h3>
+                <div class="logo-container">
+                    <img src="../../logo2.png" alt="LOGO" />
+                </div>
+                <p>Your one-stop destination for the best deals and coupons.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../brands.html">Brands</a></li>
+                    <li><a href="../../categories.html">Categories</a></li>
+                    <li><a href="../../deals.html">Today's Deals</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                    <li><i class="fas fa-envelope"></i> info@couponcraze.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Deal Street, Shop City</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+                <div class="newsletter">
+                    <h4>Subscribe to Newsletter</h4>
+                    <form>
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Coupon Craze. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../1.JS"></script>
+    <script src="dot and key.js"></script>
+   
+</body>
+</html>
+

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Split & Save</title>
+    <link rel="stylesheet" href="../../1.CSS">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="netflix.css">
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <meta name="description" content="Split and save on Netflix plans with friends and family">
+    <meta name="keywords" content="netflix, subscription, split, save, plans, streaming">
+</head>
+<body class="light-theme">
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="img_vid/netflix-logo.png" alt="LOGO" loading="lazy" />
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#deals">Deals</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#brands">Brands</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search plans..." aria-label="Search">
+                    <button type="submit" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="user-profile">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Choose your perfect Netflix plan</h1>
+                <p>Split & save with friends or family</p>
+                <button class="cta-button">Get Started</button>
+            </div>
+            <div class="hero-image">
+                <img src="HERO.jpeg" alt="Netflix on multiple devices">
+            </div>
+        </section>
+
+        <!-- Plans Section -->
+        <section id="plans" class="plans-section">
+            <h2 class="section-title">Choose Your Plan & Split The Cost</h2>
+            <p class="section-subtitle">Pay less by sharing with friends and family</p>
+            
+            <div class="plans-container">
+                <!-- Basic Plan (2 Screens) -->
+                <div class="plan-card" data-plan="basic">
+                    <div class="plan-header">
+                        <h3>Basic</h3>
+                        <div class="split-info">
+                            <i class="fas fa-users"></i>
+                            <span>2 Screens</span>
+                        </div>
+                    </div>
+                    <div class="plan-price">
+                        <div class="original-price">₹299/month</div>
+                        <div class="split-price">
+                            <span class="amount">₹149</span>
+                            <span class="period">/person/month</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Good video quality</li>
+                            <li><i class="fas fa-check"></i> Watch on 2 devices at a time</li>
+                            <li><i class="fas fa-check"></i> Ad-free entertainment</li>
+                            <li><i class="fas fa-check"></i> Download on 2 devices</li>
+                        </ul>
+                    </div>
+                    <div class="split-members">
+                        <div class="member active">
+                            <img src="img_vid/avatar1.png" alt="Member 1">
+                        </div>
+                        <div class="member empty">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <button class="split-btn">Split & Save Now</button>
+                </div>
+
+                <!-- Standard Plan (4 Screens) -->
+                <div class="plan-card featured" data-plan="standard">
+                    <div class="plan-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h3>Standard</h3>
+                        <div class="split-info">
+                            <i class="fas fa-users"></i>
+                            <span>4 Screens</span>
+                        </div>
+                    </div>
+                    <div class="plan-price">
+                        <div class="original-price">₹499/month</div>
+                        <div class="split-price">
+                            <span class="amount">₹125</span>
+                            <span class="period">/person/month</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Full HD video quality</li>
+                            <li><i class="fas fa-check"></i> Watch on 4 devices at a time</li>
+                            <li><i class="fas fa-check"></i> Ad-free entertainment</li>
+                            <li><i class="fas fa-check"></i> Download on 4 devices</li>
+                        </ul>
+                    </div>
+                    <div class="split-members">
+                        <div class="member active">
+                            <img src="img_vid/avatar1.png" alt="Member 1">
+                        </div>
+                        <div class="member empty">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="member empty">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="member empty">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <button class="split-btn featured">Split & Save Now</button>
+                </div>
+
+                <!-- Premium Plan (6 Screens) -->
+                <div class="plan-card" data-plan="premium">
+                    <div class="plan-header">
+                        <h3>Premium</h3>
+                        <div class="split-info">
+                            <i class="fas fa-users"></i>
+                            <span>6 Screens</span>
+                        </div>
+                    </div>
+                    <div class="plan-price">
+                        <div class="original-price">₹799/month</div>
+                        <div class="split-price">
+                            <span class="amount">₹133</span>
+                            <span class="period">/person/month</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Ultra HD + HDR quality</li>
+                            <li><i class="fas fa-check"></i> Watch on 6 devices at a time</li>
+                            <li><i class="fas fa-check"></i> Ad-free entertainment</li>
+                            <li><i class="fas fa-check"></i> Download on 6 devices</li>
+                            <li><i class="fas fa-check"></i> Netflix spatial audio</li>
+                        </ul>
+                    </div>
+                    <div class="split-members">
+                        <div class="member active">
+                            <img src="img_vid/avatar1.png" alt="Member 1">
+                        </div>
+                        <div class="member empty">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="member empty">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="member empty">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="member empty">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="member empty">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <button class="split-btn">Split & Save Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Shows Section -->
+        <section id="popular-shows" class="popular-shows">
+            <h2 class="section-title">Popular Shows to Watch Together</h2>
+            <p class="section-subtitle">Enjoy these trending shows with your group</p>
+            
+            <div class="shows-slider">
+                <div class="show-card">
+                    <img src="IMG/ST.jpeg" alt="Show 1">
+                    <div class="show-info">
+                        <h3>Stranger Things</h3>
+                        <div class="rating">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5/5)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="show-card">
+                    <img src="IMG/MONEY HEIST.jpeg" alt="Show 2">
+                    <div class="show-info">
+                        <h3>Money Heist</h3>
+                        <div class="rating">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <span>(5.0/5)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="show-card">
+                    <img src="IMG/WITHER.jpeg" alt="Show 3">
+                    <div class="show-info">
+                        <h3>The Witcher</h3>
+                        <div class="rating">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.0/5)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="show-card">
+                    <img src="IMG/‘Squid Game’.jpeg" alt="Show 4">
+                    <div class="show-info">
+                        <h3>Squid Game</h3>
+                        <div class="rating">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5/5)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <h2 class="section-title">Why split with Netflix?</h2>
+            <p class="section-subtitle">Enjoy premium entertainment for less</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-wallet"></i>
+                    <h3>Save More</h3>
+                    <p>Split the cost with friends and save up to 75% on your subscription</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Watch Together</h3>
+                    <p>Share the experience with friends and family on multiple devices</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Secure Sharing</h3>
+                    <p>Safe and secure account sharing with privacy protection</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Multi-Device</h3>
+                    <p>Watch on your TV, smartphone, tablet, or computer</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="how-it-works">
+            <h2 class="section-title">How Split & Save Works</h2>
+            <p class="section-subtitle">Simple steps to start saving on your Netflix subscription</p>
+            
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Choose a Plan</h3>
+                        <p>Select the Netflix plan that fits your needs and budget</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Invite Friends</h3>
+                        <p>Share your group link with friends or family members</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Split the Cost</h3>
+                        <p>Each member pays their share of the subscription</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Start Streaming</h3>
+                        <p>Enjoy Netflix on your devices at a fraction of the cost</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countdown Timer Section -->
+        <section class="countdown-section">
+            <div class="countdown-content">
+                <h2>Limited Time Offer!</h2>
+                <p>Get an additional 10% off when you create a group in:</p>
+                <div class="countdown-timer">
+                    <div class="timer-unit">
+                        <div class="timer-value" id="days">00</div>
+                        <div class="timer-label">Days</div>
+                    </div>
+                    <div class="timer-unit">
+                        <div class="timer-value" id="hours">00</div>
+                        <div class="timer-label">Hours</div>
+                    </div>
+                    <div class="timer-unit">
+                        <div class="timer-value" id="minutes">00</div>
+                        <div class="timer-label">Minutes</div>
+                    </div>
+                    <div class="timer-unit">
+                        <div class="timer-value" id="seconds">00</div>
+                        <div class="timer-label">Seconds</div>
+                    </div>
+                </div>
+                <button class="countdown-btn">Claim Offer Now</button>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <h2 class="section-title">What Our Users Say</h2>
+            <p class="section-subtitle">Join thousands of happy subscribers saving money</p>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"I'm saving over 60% on my Netflix subscription by splitting with my roommates. The process was super easy!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="img_vid/testimonial1.jpg" alt="Testimonial Author">
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <p>Standard Plan User</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"My family loves Netflix but we couldn't justify the cost. Now we split the Premium plan and everyone's happy!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="img_vid/testimonial2.jpg" alt="Testimonial Author">
+                        <div class="author-info">
+                            <h4>Rahul Patel</h4>
+                            <p>Premium Plan User</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The split payment system is so convenient. I no longer have to chase my friends for their share of the subscription."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="img_vid/testimonial3.jpg" alt="Testimonial Author">
+                        <div class="author-info">
+                            <h4>Ananya Gupta</h4>
+                            <p>Basic Plan User</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Get answers to common questions about Netflix Split & Save</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is it legal to share Netflix accounts?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Netflix officially allows account sharing within a household. Our service helps you manage this sharing efficiently and securely.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do payments work?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Each member pays their share directly through our secure payment system. The primary account holder receives the combined payment to cover the Netflix subscription.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What happens if someone doesn't pay their share?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our system automatically notifies members about upcoming payments. If someone fails to pay, their access can be temporarily suspended until payment is received.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I change my plan or group members?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can upgrade or downgrade your plan at any time. You can also add or remove group members with proper notice.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to start saving on Netflix?</h2>
+                <p>Join thousands of users who are already enjoying premium entertainment for less</p>
+                <button class="cta-button">Get Started Now</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer from HOME.HTML -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>COUPON CRAZE</h3>
+                <div class="logo-container">
+                    <img src="../../LOGO1.png" alt="LOGO" />
+                </div>
+                <p>Email: <a href="COUPONCRAZE@gmail.com">COUPON-CRAZE.com</a></p>
+                <p>Phone: <a href="tel:3156666688">315-666-6688</a></p>
+                <a href="#">Get Direction</a>
+            </div>
+            <div class="footer-services">
+                <h3>Customer Services</h3>
+                <ul>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Return & Refund</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Orders FAQs</a></li>
+                    <li><a href="#">My Wishlist</a></li>
+                </ul>
+            </div>
+            <div class="footer-information">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Stories</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">My Account</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Sign up for our COUPON NETWORK and get 10% off your first purchase</p>
+                <input type="email" placeholder="Enter your e-mail" />
+                <button type="submit">Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 COUPON-CRAZE. All Rights Reserved.</p>
+            <p>Designed by Shreyansh Kale</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../1.JS"></script>
+    <script src="netflix.js"></script>
+</body>
+</html> 

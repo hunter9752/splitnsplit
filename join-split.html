@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split N Split - Join or Host a Split</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/popup-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h1>Split<span>N</span>Split</h1>
+                </div>
+                
+                <div class="nav-wrapper">
+                    <nav>
+                        <ul class="nav-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="deals.html">Explore</a></li>
+                            <li><a href="brands.html">Brands</a></li>
+                            <li><a href="#how-it-works">How It Works</a></li>
+                            <li><a href="join-split.html" class="active">Join a Split</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div class="global-search">
+                        <input type="text" placeholder="Search premium deals...">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                        <div class="search-results"></div>
+                    </div>
+                </div>
+
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Join or Host a Split</h1>
+            <p>Connect with others to share costs or create your own split group</p>
+        </div>
+    </section>
+
+    <section class="split-options">
+        <div class="container">
+            <div class="tab-container">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="join">Join a Split</button>
+                    <button class="tab-btn" data-tab="host">Host a Split</button>
+                </div>
+                
+                <div id="join-tab" class="tab-content active">
+                    <div class="introduction">
+                        <h2>Find a Split Group to Join</h2>
+                        <p>Browse available groups below and join the one that suits your needs.</p>
+                    </div>
+                    
+                    <div class="search-filters">
+                        <div class="search-bar">
+                            <input type="text" placeholder="Search by deal or group name...">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                        
+                        <div class="filter-options">
+                            <div class="filter-group">
+                                <label>Category</label>
+                                <select>
+                                    <option value="all">All Categories</option>
+                                    <option value="streaming">Streaming</option>
+                                    <option value="music">Music</option>
+                                    <option value="software">Software</option>
+                                    <option value="fitness">Fitness</option>
+                                    <option value="shopping">Shopping</option>
+                                    <option value="gaming">Gaming</option>
+                                </select>
+                            </div>
+                            
+                            <div class="filter-group">
+                                <label>Sort By</label>
+                                <select>
+                                    <option value="newest">Newest</option>
+                                    <option value="popular">Most Popular</option>
+                                    <option value="closing">Closing Soon</option>
+                                    <option value="price-low">Price: Low to High</option>
+                                    <option value="price-high">Price: High to Low</option>
+                                </select>
+                            </div>
+                            
+                            <button class="clear-filters">Clear Filters</button>
+                        </div>
+                    </div>
+                    
+                    <div class="group-cards">
+                        <!-- Netflix Group -->
+                        <div class="group-card" id="netflix-group">
+                            <div class="group-header">
+                                <img src="images/BRANDS/NETFLIX/netflix1.jpg" alt="Netflix Group">
+                                <h3>Netflix Premium Group</h3>
+                                <div class="group-tag streaming">Streaming</div>
+                            </div>
+                            
+                            <div class="capacity">
+                                <span>2/4 Members</span>
+                                <div class="capacity-bar">
+                                    <div class="filled" style="width: 50%;"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="group-details">
+                                <div class="detail">
+                                    <i class="fas fa-user"></i>
+                                    <span>Host: Rahul S.</span>
+                                </div>
+                                
+                                <div class="detail">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Created: 12 Mar 2023</span>
+                                </div>
+                                
+                                <div class="detail">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Closing: 20 Mar 2023</span>
+                                </div>
+                                
+                                <div class="detail">
+                                    <i class="fas fa-rupee-sign"></i>
+                                    <span>Your Cost: ₹162/month</span>
+                                </div>
+                            </div>
+                            
+                            <p class="group-description">
+                                Join our Netflix Premium group for 4K streaming on up to 4 devices simultaneously. We're looking for 2 more reliable members to share the cost.
+                            </p>
+                            
+                            <div class="group-actions">
+                                <a href="#" class="btn btn-primary">Join This Group</a>
+                                <a href="#" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Spotify Group -->
+                        <div class="group-card" id="spotify-group">
+                            <div class="group-header">
+                                <img src="images/15 NEW.jpeg" alt="Spotify Group">
+                                <h3>Spotify Family Plan</h3>
+                                <div class="group-tag music">Music</div>
+                            </div>
+                            
+                            <div class="capacity">
+                                <span>4/6 Members</span>
+                                <div class="capacity-bar">
+                                    <div class="filled" style="width: 66.67%;"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="group-details">
+                                <div class="detail">
+                                    <i class="fas fa-user"></i>
+                                    <span>Host: Priya M.</span>
+                                </div>
+                                
+                                <div class="detail">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Created: 05 Mar 2023</span>
+                                </div>
+                                
+                                <div class="detail">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Closing: 18 Mar 2023</span>
+                                </div>
+                                
+                                <div class="detail">
+                                    <i class="fas fa-rupee-sign"></i>
+                                    <span>Your Cost: ₹35/month</span>
+                                </div>
+                            </div>
+                            
+                            <p class="group-description">
+                                Join our Spotify Family Plan and enjoy ad-free music streaming. We need 2 more members to complete our group. Quick, easy setup!
+                            </p>
+                            
+                            <div class="group-actions">
+                                <a href="#" class="btn btn-primary">Join This Group</a>
+                                <a href="#" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Dot & Key Group -->
+                        <div class="group-card" id="dotkey-group">
+                            <div class="group-header">
+                                <img src="images/DOT AND KEY.png" alt="Dot & Key Group">
+                                <h3>Dot & Key Skincare Box</h3>
+                                <div class="group-tag beauty">Beauty</div>
+                            </div>
+                            
+                            <div class="capacity">
+                                <span>1/3 Members</span>
+                                <div class="capacity-bar">
+                                    <div class="filled" style="width: 33.33%;"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="group-details">
+                                <div class="detail">
+                                    <i class="fas fa-user"></i>
+                                    <span>Host: Neha K.</span>
+                                </div>
+                                
+                                <div class="detail">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Created: 10 Mar 2023</span>
+                                </div>
+                                
+                                <div class="detail">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Closing: 25 Mar 2023</span>
+                                </div>
+                                
+                                <div class="detail">
+                                    <i class="fas fa-rupee-sign"></i>
+                                    <span>Your Cost: ₹999/month</span>
+                                </div>
+                            </div>
+                            
+                            <p class="group-description">
+                                Join our premium skincare subscription group and get Dot & Key products delivered monthly. Looking for 2 more skincare enthusiasts!
+                            </p>
+                            
+                            <div class="group-actions">
+                                <a href="#" class="btn btn-primary">Join This Group</a>
+                                <a href="#" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Gold's Gym Group -->
+                        <div class="group-card" id="gym-group">
+                            <div class="group-header">
+                                <img src="images/10 NEW.jpeg" alt="Gold's Gym Group">
+                                <h3>Gold's Gym Annual Pass</h3>
+                                <div class="group-tag fitness">Fitness</div>
+                            </div>
+                            
+                            <div class="capacity">
+                                <span>2/3 Members</span>
+                                <div class="capacity-bar">
+                                    <div class="filled" style="width: 66.67%;"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="group-details">
+                                <div class="detail">
+                                    <i class="fas fa-user"></i>
+                                    <span>Host: Arjun P.</span>
+                                </div>
+                                
+                                <div class="detail">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Created: 02 Mar 2023</span>
+                                </div>
+                                
+                                <div class="detail">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Closing: 22 Mar 2023</span>
+                                </div>
+                                
+                                <div class="detail">
+                                    <i class="fas fa-rupee-sign"></i>
+                                    <span>Your Cost: ₹12,000/year</span>
+                                </div>
+                            </div>
+                            
+                            <p class="group-description">
+                                We're looking for one more fitness enthusiast to join our Gold's Gym group. Annual membership with access to all premium facilities.
+                            </p>
+                            
+                            <div class="group-actions">
+                                <a href="#" class="btn btn-primary">Join This Group</a>
+                                <a href="#" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pagination">
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#" class="next">Next <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                
+                <div id="host-tab" class="tab-content">
+                    <div class="introduction">
+                        <h2>Host Your Own Split Group</h2>
+                        <p>Create a new group and invite others to share the cost with you.</p>
+                    </div>
+                    
+                    <form class="host-form" id="hostSplitForm">
+                        <!-- Deal Information Section -->
+                        <div class="form-section">
+                            <h3>Deal Information</h3>
+                            <div class="form-group">
+                                <label for="deal-type">Deal Type*</label>
+                                <select id="deal-type" required>
+                                    <option value="">Select a Deal Type</option>
+                                    <option value="existing">Existing Deal</option>
+                                    <option value="custom">Custom Deal</option>
+                                </select>
+                            </div>
+                            
+                            <div id="existing-deal" class="conditional-section hidden">
+                                <div class="form-group">
+                                    <label for="existing-deal-select">Select Deal*</label>
+                                    <select id="existing-deal-select" required>
+                                        <option value="">Select a Deal</option>
+                                        <option value="netflix">Netflix Premium</option>
+                                        <option value="spotify">Spotify Family</option>
+                                        <option value="dotkey">Dot & Key Skincare</option>
+                                        <option value="goldsgym">Gold's Gym</option>
+                                        <option value="prime">Amazon Prime</option>
+                                        <option value="hbo">HBO Max</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div id="custom-deal" class="conditional-section hidden">
+                                <div class="form-group">
+                                    <label for="deal-name">Deal Name*</label>
+                                    <input type="text" id="deal-name" placeholder="e.g., Disney+ Premium" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="deal-category">Category*</label>
+                                    <select id="deal-category" required>
+                                        <option value="">Select a Category</option>
+                                        <option value="streaming">Streaming</option>
+                                        <option value="music">Music</option>
+                                        <option value="software">Software</option>
+                                        <option value="fitness">Fitness</option>
+                                        <option value="shopping">Shopping</option>
+                                        <option value="gaming">Gaming</option>
+                                        <option value="beauty">Beauty & Wellness</option>
+                                        <option value="food">Food & Dining</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="deal-price">Total Price* (₹)</label>
+                                    <input type="number" id="deal-price" placeholder="e.g., 599" min="1" max="100000" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="deal-cycle">Billing Cycle*</label>
+                                    <select id="deal-cycle" required>
+                                        <option value="monthly">Monthly</option>
+                                        <option value="quarterly">Quarterly</option>
+                                        <option value="yearly">Yearly</option>
+                                        <option value="one-time">One-time Payment</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="deal-description">Deal Description*</label>
+                                    <textarea id="deal-description" rows="4" placeholder="Describe the deal, features, benefits, etc." required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Group Details Section -->
+                        <div class="form-section">
+                            <h3>Group Details</h3>
+                            
+                            <div class="form-group">
+                                <label for="group-name">Group Name*</label>
+                                <input type="text" id="group-name" placeholder="e.g., Netflix Premium Group" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="group-size">Group Size*</label>
+                                <select id="group-size" required>
+                                    <option value="2">2 Members</option>
+                                    <option value="3">3 Members</option>
+                                    <option value="4">4 Members</option>
+                                    <option value="5">5 Members</option>
+                                    <option value="6">6 Members</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="group-description">Group Description*</label>
+                                <textarea id="group-description" rows="4" placeholder="Tell potential members about your group, expectations, rules, etc." required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="closing-date">Closing Date*</label>
+                                <input type="date" id="closing-date" required>
+                            </div>
+                        </div>
+                        
+                        <!-- Host Information Section -->
+                        <div class="form-section">
+                            <h3>Your Information</h3>
+                            
+                            <div class="form-group">
+                                <label for="host-name">Your Name*</label>
+                                <input type="text" id="host-name" placeholder="Enter your full name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="host-email">Email*</label>
+                                <input type="email" id="host-email" placeholder="Enter your email address" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="host-phone">Phone Number</label>
+                                <input type="tel" id="host-phone" placeholder="Enter your phone number">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="host-address">Address</label>
+                                <textarea id="host-address" rows="3" placeholder="Enter your address"></textarea>
+                            </div>
+                        </div>
+                        
+                        <!-- Payment Details Section -->
+                        <div class="form-section">
+                            <h3>Payment Details</h3>
+                            
+                            <div class="form-group">
+                                <label for="payment-method">Payment Method*</label>
+                                <select id="payment-method" required>
+                                    <option value="">Select Payment Method</option>
+                                    <option value="platform">Platform Escrow (Recommended)</option>
+                                    <option value="upi">UPI Direct</option>
+                                    <option value="bank">Bank Transfer</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="payment-cycle">Payment Collection*</label>
+                                <select id="payment-cycle" required>
+                                    <option value="advance">In Advance</option>
+                                    <option value="monthly">Monthly</option>
+                                    <option value="quarterly">Quarterly</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="additional-info">Additional Information</label>
+                                <textarea id="additional-info" rows="4" placeholder="Any additional information members should know about payment, schedules, etc."></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-outline">Cancel</button>
+                            <button type="button" class="btn btn-secondary">Preview</button>
+                            <button type="submit" class="btn btn-primary">Create Split</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-banner">
+        <div class="container">
+            <div class="section-header">
+                <h2>Watch How It Works</h2>
+                <p>See how easy it is to join a split and save money</p>
+            </div>
+            <div class="video-container">
+                <iframe data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="How Split N Split Works" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about joining or hosting a split</p>
+            </div>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>How do payments work?</h3>
+                        <div class="icon"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-content">
+                        <p>When you join a split, you'll pay your share directly through our secure platform. For host-created splits, the payment goes into an escrow account until the group is formed, after which it's released to the service provider. For existing subscription splits, the payment goes to the host who manages the subscription.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>What happens if a member drops out?</h3>
+                        <div class="icon"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-content">
+                        <p>If a member drops out, the host can find a replacement member to keep the cost distribution the same. If no replacement is found, the remaining members may need to cover the additional cost until a replacement is found. Each group sets its own policy on this, so check the group details before joining.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Will my personal information be shared?</h3>
+                        <div class="icon"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We value your privacy. Only the information necessary for managing the split will be shared with group members. For example, the host might need your email to add you to a subscription service, but your payment details and other personal information remain private.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Can I leave a split before the subscription ends?</h3>
+                        <div class="icon"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes, you can leave a split, but there may be terms set by the group host. Typically, you'll need to give advance notice (usually 30 days) and might need to help find a replacement. Some groups may have cancellation fees for early exits, so check the group's policy before joining.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>How do I ensure everyone pays their fair share?</h3>
+                        <div class="icon"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Our platform includes automated payment reminders and tracking. As a host, you can set up automatic collection of payments for the duration of the subscription. Members who consistently miss payments can be removed from the group according to the terms set by the host.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Saving?</h2>
+                <p>Join thousands of smart users who are already saving money with Split N Split.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Join a Split Now</a>
+                    <a href="#host-tab" class="btn btn-secondary">Host Your Own</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Split N Split</h3>
+                    <p>Join the smart saving revolution by splitting premium subscriptions with others.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="index.html#how-it-works">How It Works</a></li>
+                        <li><a href="join-split.html">Join a Split</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="deals.html#streaming">Streaming</a></li>
+                        <li><a href="deals.html#music">Music</a></li>
+                        <li><a href="deals.html#software">Software</a></li>
+                        <li><a href="deals.html#fitness">Fitness</a></li>
+                        <li><a href="deals.html#shopping">Shopping</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Split N Split. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="theme-switch-wrapper">
+        <span class="theme-icon"><i class="fas fa-moon"></i></span>
+        <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/join-deal.js"></script>
+
+    <!-- Split Details Modal -->
+    <div id="splitDetailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <h2>Split Details</h2>
+            </div>
+            <div class="modal-body">
+                <div id="splitDetailsContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function showSplitDetails(splitId) {
+        const modal = document.getElementById('splitDetailsModal');
+        const content = document.getElementById('splitDetailsContent');
+        
+        // Fetch split details from API
+        fetch(`${API_URL}/splits/${splitId}`)
+            .then(response => response.json())
+            .then(split => {
+                content.innerHTML = `
+                    <div class="split-details-card">
+                        <div class="split-header">
+                            <h3>${split.name}</h3>
+                            <span class="split-badge">${split.status}</span>
+                        </div>
+                        <div class="split-info">
+                            <p><strong>Description:</strong> ${split.description}</p>
+                            <p><strong>Duration:</strong> ${split.duration} months</p>
+                            <p><strong>Members:</strong> ${split.currentMembers}/${split.maxMembers}</p>
+                            <p><strong>Price per member:</strong> ₹${split.price}</p>
+                            <p><strong>Total savings:</strong> ₹${split.savings}</p>
+                        </div>
+                        <div class="split-features">
+                            <h4>Features:</h4>
+                            <ul>
+                                ${split.features.map(feature => `<li><i class="fas fa-check"></i> ${feature}</li>`).join('')}
+                            </ul>
+                        </div>
+                        <div class="split-actions">
+                            <a href="join-deal.html?id=${split._id}" class="btn btn-primary">Join Split</a>
+                        </div>
+                    </div>
+                `;
+                modal.style.display = 'block';
+            })
+            .catch(error => {
+                console.error('Error fetching split details:', error);
+                content.innerHTML = '<p class="error">Error loading split details. Please try again.</p>';
+            });
+    }
+
+    // Close modal when clicking X
+    document.querySelectorAll('.close').forEach(closeBtn => {
+        closeBtn.addEventListener('click', () => {
+            document.getElementById('splitDetailsModal').style.display = 'none';
+        });
+    });
+
+    // Close modal when clicking outside
+    window.addEventListener('click', (e) => {
+        const modal = document.getElementById('splitDetailsModal');
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+    </script>
+</body>
+</html> 

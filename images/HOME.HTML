@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupon Craze</title>
+    <link rel="stylesheet" href="1.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Find the best deals and coupons for your favorite brands">
+    <meta name="keywords" content="coupons, deals, discounts, offers">
+</head>
+<body class="light-theme">
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo2.png" alt="LOGO" loading="lazy" />
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#deals">Deals</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#brands">Brands</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search coupons..." aria-label="Search">
+                    <button type="submit" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="user-profile">
+                    <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="deals" class="deals">
+            <h2>PROMOTIONAL DEALS</h2>
+            <div class="slider">
+                <div class="slide active">
+                    <img src="10deal.avif" alt="Deal 1">
+                    <h3>Buy One Get One Free</h3>
+                    <p>On selected Face Wash and Shampoo</p>
+                    <button class="redeem-btn">Redeem Deal</button>
+                </div>
+                <div class="slide">
+                    <img src="3DEAL.avif" alt="Deal 3">
+                    <h3>Free Moisturizer</h3>
+                    <p>With every purchase of $50 or more</p>
+                    <button class="redeem-btn">Redeem Deal</button>
+                </div>
+                <div class="slide">
+                    <img src="5 DEAL.avif" alt="Deal 4">
+                    <h3>Bundle Offer</h3>
+                    <p>Buy Face Wash and Sunscreen for $25</p>
+                    <button class="redeem-btn">Redeem Deal</button>
+                </div>
+                <div class="slide">
+                    <img src="7deal.avif" alt="Deal 5">
+                    <h3>30% Off on Skincare Products</h3>
+                    <p>Limited time offer on selected items</p>
+                    <button class="redeem-btn">Redeem Deal</button>
+                </div>
+                <div class="slide">
+                    <img src="8deal.avif" alt="New Deal">
+                    <h3>plum offers </h3>
+                    <p>20% Off</p>
+                    <button class="redeem-btn">Redeem Deal</button>
+                </div>
+                <div class="slide">
+                    <img src="1DEAL.avif" alt="New Deal">
+                    <h3>Buy Two Get One Free</h3>
+                    <p>On selected Skincare Products</p>
+                    <button class="redeem-btn">Redeem Deal</button>
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </section>
+        
+        <section id="categories" class="categories">
+            <h2>DISCOVER CATEGORIES</h2>
+            <div class="category-list">
+                <div class="category-item">
+                    <img src="FLASH SKINTIFIC 5X Ceramide Serum Sunscreen SPF50 PA++++Sunblock.jpeg" alt="Sunscreen">
+                    <h3>Sunscreen</h3>
+                </div>
+                <div class="category-item">
+                    <img src="FACE WASH.webp" alt="Face Wash">
+                    <h3>Face Wash</h3>
+                </div>
+                <div class="category-item">
+                    <img src="Water Bank Blue Hyaluronic Cream Moisturizer - 20mL.jpeg" alt="Moisturizer">
+                    <h3>Moisturizer</h3>
+                </div>
+                <div class="category-item">
+                    <img src="SERUM.webp" alt="Serums">
+                    <h3>Serums</h3>
+                </div>
+                <div class="category-item">
+                    <img src="make2.jpeg" alt="Makeup Kit">
+                    <h3>Makeup Kit</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="brands" class="brands">
+            <h2>BRAND WE TRUST </h2>
+            <div class="brand-logos">
+                <div class="brand-logo">
+                    <img src="DERMA.avif" alt="Derma">
+                    <p>Derma</p>
+                </div>
+                <div class="brand-logo">
+                    <img src="DOT AND KEY.png" alt="Dot and Key">
+                    <p>Dot and Key</p>
+                </div>
+                <div class="brand-logo">
+                    <img src="mammet.png" alt="Man Matters">
+                    <p>Man Matters</p>
+                </div>
+                <div class="brand-logo">
+                    <img src="CHANEL.png" alt="Chanel">
+                    <p>Chanel</p>
+                </div>
+                <div class="brand-logo">
+                    <img src="NIVEA.png" alt="Nivea">
+                    <p>Nivea</p>
+                </div>
+                <div class="brand-logo">
+                    <img src="plum1.png" alt="plum">
+                    <p>plum</p>
+                </div>
+                <div class="brand-logo">
+                    <img src="nykaa1.png" alt="Louis Vuitton">
+                    <p>nykaa</p>
+                </div>
+                <div class="brand-logo">
+                    <img src="lakme.png" alt="Skin Care Natural">
+                    <p>lakme</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <h2>CURATED PRODUCTS</h2>
+            <div class="product-list">
+                <div class="product">
+                    <div class="image-container">
+                        <img src="download (3).jpeg" alt="Nykaa" class="product-image">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="image-container">
+                        <img src="deal10.jpg" alt="Sunscreen" class="product-image">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="image-container">
+                        <img src="deal13.jpeg" alt="Moisturizer" class="product-image">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="image-container">
+                        <img src="deal8.jpg" alt="Face Wash" class="product-image">
+                    </div>
+                </div>
+            </div>
+        </section>   
+
+        <section id="new-arrivals" class="new-arrivals">
+            <h2>New Arrivals</h2>
+            <div class="list1">
+                <div class="new">
+                    <div class="img-con">
+                        <img src="11 NEW.jpeg" alt="New Arrival Product 1" class="probimg">
+                    </div>
+                    <h3>CHANEL Chance Eau Tendre Parfume</h3>
+                    <p>BUY 5 GET ONE FREE</p>
+                    <div class="rating">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                    </div>
+                    <button class="redeem-btn">View Product</button>
+                </div>
+                <div class="new">
+                    <div class="img-con">
+                        <img src="13 NEW.jpeg" alt="New Arrival Product 2" class="probimg">
+                    </div>
+                    <h3>NIVEA Soothing cleansing oil</h3>
+                    <p>BUY 2 GET ONE FREE</p>
+                    <div class="rating">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star unfilled"></i>
+                    </div>
+                    <button class="redeem-btn">View Product</button>
+                </div>
+                <div class="new">
+                    <div class="img-con">
+                        <img src="NEW 1.jpg" alt="New Arrival Product 3" class="probimg">
+                    </div>
+                    <h3>DOT & KEY NIGHT RESET</h3>
+                    <p>BUY 5 GET 2 FREE</p>
+                    <div class="rating">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                    </div>
+                    <button class="redeem-btn">View Product</button>
+                </div>
+                <div class="new">
+                    <div class="img-con">
+                        <img src="NEW 2.jpg" alt="New Arrival Product 4" class="probimg">
+                    </div>
+                    <h3>DOT & KEY PROMEGRANATE</h3>
+                    <p>BUY 3 GET 1 FREE</p>
+                    <div class="rating">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star unfilled"></i>
+                    </div>
+                    <button class="redeem-btn">View Product</button>
+                </div>
+                <div class="new">
+                    <div class="img-con">
+                        <img src="12 NEW.jpeg" alt="New Arrival Product 5" class="probimg">
+                    </div>
+                    <h3>LAKME RADIANCE FACE WASH</h3>
+                    <p>BUY  ONE GET ONE FREE</p>
+                    <div class="rating">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star unfilled"></i>
+                    </div>
+                    <button class="redeem-btn">View Product</button>
+                </div>
+                <div class="new">
+                    <div class="img-con">
+                        <img src="16 NEW.jpeg" alt="New Arrival Product 6" class="probimg">
+                    </div>
+                    <h3>NIVEA Soft Moisturizing cream</h3>
+                    <p>BUY ONE GET ONE FREE</p>
+                    <div class="rating">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star unfilled"></i>
+                    </div>
+                    <button class="redeem-btn">View Product</button>
+                </div>
+                <div class="new">
+                    <div class="img-con">
+                        <img src="20 NEW.jpeg" alt="New Arrival Product 7" class="probimg">
+                    </div>
+                    <h3>CHANEL Camellia Repair Mask</h3>
+                    <p>BUY 5 GET 2  FREE</p>
+                    <div class="rating">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                    </div>
+                    <button class="redeem-btn">View Product</button>
+                </div>
+                <div class="new">
+                    <div class="img-con">
+                        <img src="download (7).jpeg" alt="New Arrival Product 8" class="probimg">
+                    </div>
+                    <h3>CHANEL Bleu De Parfum</h3>
+                    <p> BUY 4 GET ONE FREE</p>
+                    <div class="rating">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                    </div>
+                    <button class="redeem-btn">View Product</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>COUPON CRAZE</h3>
+                <div class="logo-container">
+                    <img src="LOGO1.png" alt="LOGO" />
+                </div>
+                <p>Email: <a href="COUPONCRAZE@gmail.com">COUPON-CRAZE.com</a></p>
+                <p>Phone: <a href="tel:3156666688">315-666-6688</a></p>
+                <a href="#">Get Direction</a>
+            </div>
+            <div class="footer-services">
+                <h3>Customer Services</h3>
+                <ul>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Return & Refund</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Orders FAQs</a></li>
+                    <li><a href="#">My Wishlist</a></li>
+                </ul>
+            </div>
+            <div class="footer-information">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Stories</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">My Account</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Sign up for our COUPON NETWORK and get 10% off your first purchase</p>
+                <input type="email" placeholder="Enter your e-mail" />
+                <button type="submit">Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 COUPON-CRAZE. All Rights Reserved.</p>
+            <p>Designed by Shreyansh Kale</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="1.js"></script>
+</body>
+</html>

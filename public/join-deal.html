@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Split Plan - SplitNSplit</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="SplitNSplit">
+            <span>SplitNSplit</span>
+          </a>
+        </div>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="brands.html">Brands</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-buttons">
+          <div id="user-menu" style="display: none;">
+            <span id="user-name"></span>
+            <div class="dropdown-menu">
+              <a href="my-deals.html">My Deals</a>
+              <a href="profile.html">Profile</a>
+              <a href="#" onclick="logout()">Logout</a>
+            </div>
+          </div>
+          <button id="login-button" class="btn btn-outline">Login</button>
+          <button id="signup-button" class="btn btn-primary">Sign Up</button>
+        </div>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="join-deal-page">
+    <div class="container">
+      <div class="page-header">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a> &gt;
+          <a href="brands.html">Brands</a> &gt;
+          <a href="#" id="brand-link">Brand</a> &gt;
+          <a href="#" id="deal-name">Deal</a> &gt;
+          <span>Join Split</span>
+        </div>
+        <h1>Join Split Plan</h1>
+      </div>
+
+      <!-- Deal details -->
+      <div class="join-deal-content">
+        <div id="deal-details" class="deal-details-card">
+          <!-- Deal details will be loaded here -->
+          <div class="loading-spinner"></div>
+        </div>
+
+        <!-- Modals -->
+        <div id="address-modal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2>Enter Your Address</h2>
+              <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+              <form id="address-form">
+                <div class="form-group">
+                  <label for="street">Street Address</label>
+                  <input type="text" id="street" name="street" placeholder="Enter your street address" required>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" placeholder="City" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" placeholder="State" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="pincode">Pincode</label>
+                  <input type="text" id="pincode" name="pincode" placeholder="Pincode" required>
+                </div>
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary">Continue</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div id="payment-modal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2>Payment Details</h2>
+              <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+              <div class="payment-details">
+                <h3>Order Summary</h3>
+                <div class="payment-item">
+                  <span class="label">Deal:</span>
+                  <span class="value" id="payment-deal-name">Netflix Premium Split</span>
+                </div>
+                <div id="payment-amount" class="payment-amount">
+                  <!-- Payment amount details will be loaded here -->
+                </div>
+                <div class="payment-item">
+                  <span class="label">Shipping Address:</span>
+                  <span class="value address" id="payment-address"></span>
+                </div>
+              </div>
+              <form id="payment-form">
+                <div class="form-group">
+                  <label>Select Payment Method</label>
+                  <div class="payment-methods">
+                    <div class="payment-method">
+                      <input type="radio" id="upi" name="payment-method" value="upi" checked>
+                      <label for="upi">UPI</label>
+                    </div>
+                    <div class="payment-method">
+                      <input type="radio" id="card" name="payment-method" value="card">
+                      <label for="card">Credit/Debit Card</label>
+                    </div>
+                    <div class="payment-method">
+                      <input type="radio" id="netbanking" name="payment-method" value="netbanking">
+                      <label for="netbanking">Net Banking</label>
+                    </div>
+                    <div class="payment-method">
+                      <input type="radio" id="wallet" name="payment-method" value="wallet">
+                      <label for="wallet">Wallet</label>
+                    </div>
+                    <div class="payment-method">
+                      <input type="radio" id="cod" name="payment-method" value="cod">
+                      <label for="cod">Cash on Delivery</label>
+                    </div>
+                  </div>
+                </div>
+                <div id="online-payment-fields">
+                  <div class="payment-info">
+                    <p>Please pay to the following UPI ID: <strong>splitnsplit@okaxis</strong></p>
+                    <p>After payment, enter your transaction ID below.</p>
+                  </div>
+                  <div class="form-group">
+                    <label for="transaction-id">Transaction ID</label>
+                    <input type="text" id="transaction-id" name="transaction-id" placeholder="Enter transaction ID">
+                  </div>
+                </div>
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary">Pay Now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div id="success-notification" class="notification success">
+          <div class="notification-content">
+            <i class="fas fa-check-circle"></i>
+            <div id="success-message">
+              <!-- Success message will be loaded here -->
+            </div>
+          </div>
+        </div>
+
+        <div id="error-message" class="notification error">
+          <div class="notification-content">
+            <i class="fas fa-exclamation-circle"></i>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="SplitNSplit">
+          <p>Save big on your favorite subscriptions by splitting with others safely and securely.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="brands.html">Brands</a></li>
+              <li><a href="how-it-works.html">How It Works</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Categories</h3>
+            <ul>
+              <li><a href="brands.html?category=streaming">Streaming</a></li>
+              <li><a href="brands.html?category=music">Music</a></li>
+              <li><a href="brands.html?category=shopping">Shopping</a></li>
+              <li><a href="brands.html?category=fitness">Fitness</a></li>
+              <li><a href="brands.html?category=gaming">Gaming</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+              <li><i class="fas fa-envelope"></i> support@splitnsplit.com</li>
+              <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+              <li><i class="fas fa-map-marker-alt"></i> Bengaluru, India</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>&copy; 2023 SplitNSplit. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Auth Modal -->
+  <div id="auth-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="tabs">
+          <div id="login-tab" class="tab active">Login</div>
+          <div id="signup-tab" class="tab">Sign Up</div>
+        </div>
+        <span id="close-auth-modal" class="close-modal">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p id="auth-modal-message"></p>
+        <div id="auth-error-message" class="error-message"></div>
+        
+        <div id="login-content" class="tab-content">
+          <form id="login-form">
+            <div class="form-group">
+              <label for="login-email">Email</label>
+              <input type="email" id="login-email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="login-password">Password</label>
+              <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+          </form>
+        </div>
+        
+        <div id="signup-content" class="tab-content" style="display: none;">
+          <form id="signup-form">
+            <div class="form-group">
+              <label for="signup-name">Full Name</label>
+              <input type="text" id="signup-name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="signup-email">Email</label>
+              <input type="email" id="signup-email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="signup-phone">Phone Number</label>
+              <input type="tel" id="signup-phone" name="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+              <label for="signup-password">Password</label>
+              <input type="password" id="signup-password" name="password" placeholder="Create a password" required>
+            </div>
+            <div class="form-group">
+              <label for="signup-confirm-password">Confirm Password</label>
+              <input type="password" id="signup-confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Sign Up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/join-deal.js"></script>
+</body>
+</html> 
